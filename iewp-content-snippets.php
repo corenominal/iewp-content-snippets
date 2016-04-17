@@ -72,6 +72,19 @@ function iewp_get_content_snippet( $id )
 	$data['title'] = 'No snippet title';
 	$data['content'] = '<p>No snippet body.</p>';
 
+	if( ! is_numeric( $id ) )
+	{
+		$id = $wpdb->get_col("SELECT ID from $wpdb->posts WHERE post_title = '$id' AND post_type = 'content_snippet' ");
+		if( empty( $id ) )
+		{
+			$id = -1;
+		}
+		else
+		{
+			$id = $id[0];
+		}
+	}
+
 	$args = array (
 		'p'                      => $id,
 		'post_type'              => array( 'content_snippet' ),
@@ -101,7 +114,22 @@ function iewp_get_content_snippet( $id )
 function iewp_content_snippet( $id )
 {
 
+	global $wpdb;
+	
 	$data['content'] = '<p>No snippet body.</p>';
+
+	if( ! is_numeric( $id ) )
+	{
+		$id = $wpdb->get_col("SELECT ID from $wpdb->posts WHERE post_title = '$id' AND post_type = 'content_snippet' ");
+		if( empty( $id ) )
+		{
+			$id = -1;
+		}
+		else
+		{
+			$id = $id[0];
+		}
+	}
 
 	$args = array (
 		'p'                      => $id,
