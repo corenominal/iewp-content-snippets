@@ -8,4 +8,8 @@ Content snippets can be embedded into templates and pages via the provided funct
 
     <?php iewp_content_snippet( 13 ) ?>
 
-Where '13' is the ID of the content snippet.
+Where '13' is the ID of the content snippet, or
+
+	<?php iewp_content_snippet( 'Front Page - FAQs' ) ?>
+
+Where 'Front Page - FAQs' is the title of the content snippet.
