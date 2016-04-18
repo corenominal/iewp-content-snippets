@@ -4,6 +4,8 @@
  */
 function iewp_get_content_snippet( $id )
 {
+	global $wpdb;
+	
 	$data['title'] = 'No snippet title';
 	$data['content'] = '<p>No snippet body.</p>';
 
