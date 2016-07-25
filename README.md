@@ -1,6 +1,6 @@
 # Content Snippets - WordPress Plugin
 
-A WordPress plugin for creating and displaying content snippets via a [custom post type](https://codex.wordpress.org/Post_Types#Custom_Post_Types). The allows for editing of sections of a webpage, without providing full access to the template.
+A WordPress plugin for creating and displaying content snippets via a [custom post type](https://codex.wordpress.org/Post_Types#Custom_Post_Types). The plugin allows for editing of sections of a webpage, without providing full access to the template.
 
 ![Screenshot of plugin.](https://corenominal.org/wp-content/uploads/2016/04/Content_Snippets__WordPress_Plugin.png)
 
