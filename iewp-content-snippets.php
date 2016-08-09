@@ -17,3 +17,8 @@ require_once( plugin_dir_path( __FILE__ ) . 'register_custom_post_type.php' );
  * Include the template function
  */
 require_once( plugin_dir_path( __FILE__ ) . 'template_functions.php' );
+
+/**
+ * Include shortcodes
+ */
+require_once( plugin_dir_path( __FILE__ ) . 'shortcodes.php' );
