@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 /**
  * Shortcodes for posts and pages
  * Usage: [content_snippet title="Foo"]

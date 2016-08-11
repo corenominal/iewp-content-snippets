@@ -1,10 +1,11 @@
 <?php
+if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 /**
  * Register the custom post type for content snippets
  */
 function iewp_register_post_type_content_snippet()
 {
-	
+
 	$singular = 'Content Snippet';
 	$plural = 'Content Snippets';
 	$slug = str_replace( ' ', '_', strtolower( $singular ) );
@@ -44,9 +45,9 @@ function iewp_register_post_type_content_snippet()
 	        'capability_type'     => 'page',
 	        'map_meta_cap'        => true,
 	        'rewrite'             => false,
-	        'supports'            => array( 
-	        	'title', 
-	        	'editor', 
+	        'supports'            => array(
+	        	'title',
+	        	'editor',
 	        	'author'
 	        )
 	);

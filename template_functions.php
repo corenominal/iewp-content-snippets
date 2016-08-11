@@ -1,11 +1,12 @@
 <?php
+if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 /**
  * Return array of the content snippet
  */
 function iewp_get_content_snippet( $id )
 {
 	global $wpdb;
-	
+
 	$data['title'] = 'No snippet title';
 	$data['content'] = '<p>No snippet body.</p>';
 
@@ -52,7 +53,7 @@ function iewp_content_snippet( $id )
 {
 
 	global $wpdb;
-	
+
 	$data['content'] = '<p>No snippet body.</p>';
 
 	if( ! is_numeric( $id ) )

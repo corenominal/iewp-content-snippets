@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 /**
  * Plugin Name: IEWP Content Snippets
  * Plugin URI: https://github.com/corenominal/iewp-content-snippets
