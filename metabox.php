@@ -13,7 +13,7 @@ function iewp_content_snippets_add_metabox_shortcodes()
     		'iewp_content_snippets_metabox_shortcodes',
     		'Content Snippet Shortcodes',
     		'iewp_content_snippets_metabox_shortcode_callback',
-    		array('page','post'),
+    		null,
     		'normal',
     		'default'
     		);
