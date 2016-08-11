@@ -23,3 +23,8 @@ require_once( plugin_dir_path( __FILE__ ) . 'template_functions.php' );
  * Include shortcodes
  */
 require_once( plugin_dir_path( __FILE__ ) . 'shortcodes.php' );
+
+/**
+ * Show metabox in editor
+ */
+require_once( plugin_dir_path( __FILE__ ) . 'metabox.php' );
