@@ -27,29 +27,29 @@ function iewp_register_post_type_content_snippet()
 		);
 
 	$args = array(
-			'labels'              => $labels,
-	        'public'              => true,
-	        'publicly_queryable'  => false,
-	        'exclude_from_search' => true,
-	        'show_in_nav_menus'   => true,
-	        'show_ui'             => true,
-	        'show_in_menu'        => true,
-	        'show_in_admin_bar'   => true,
-	        'menu_position'       => 20,
-	        'menu_icon'           => 'dashicons-media-text',
-	        'can_export'          => true,
-	        'delete_with_user'    => false,
-	        'hierarchical'        => false,
-	        'has_archive'         => false,
-	        'query_var'           => true,
-	        'capability_type'     => 'page',
-	        'map_meta_cap'        => true,
-	        'rewrite'             => false,
-	        'supports'            => array(
-	        	'title',
-	        	'editor',
-	        	'author'
-	        )
+		'labels'              => $labels,
+		'public'              => false,
+		'publicly_queryable'  => false,
+		'exclude_from_search' => true,
+		'show_in_nav_menus'   => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 20,
+		'menu_icon'           => 'dashicons-media-text',
+		'can_export'          => true,
+		'delete_with_user'    => false,
+		'hierarchical'        => false,
+		'has_archive'         => false,
+		'query_var'           => true,
+		'capability_type'     => 'page',
+		'map_meta_cap'        => true,
+		'rewrite'             => false,
+		'supports'            => array(
+			'title',
+			'editor',
+			'author'
+		)
 	);
 	register_post_type( $slug, $args );
 }
